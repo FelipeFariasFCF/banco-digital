@@ -6,12 +6,10 @@ public class Main {
 		Cliente felipe = new Cliente();
 		felipe.setNome("Felipe");
 		
-		Banco banco = new Banco();
 		Conta cCorrente = new ContaCorrente(felipe);
 		Conta cPoupanca = new ContaPoupanca(felipe);
 
 		cCorrente.imprimirExtrato();
 		cPoupanca.imprimirExtrato();
-		banco.listarContas();
 	}
 }
